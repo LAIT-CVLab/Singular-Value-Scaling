@@ -1,10 +1,10 @@
-# StyleGAN Compression
+# StyleGAN2 Compression
 
 ## Usage
 
 ### Installation
 
-- We use following conda environments for all experiments.
+- We used following conda environments for all experiments.
 ```
 conda create -n stylegan2-dev -y python=3.8
 conda activate stylegan2-dev
@@ -20,14 +20,16 @@ pip install click requests tqdm opencv-python-headless matplotlib regex ftfy psu
 
 ### Download Dense StyleGAN2 Weights
 
-- You have to download pre-trained weights before pruning & fine-tuning.
-- For StyleGAN2 (base), you can download pre-trained weights from [DCP-GAN](https://github.com/jiwoogit/DCP-GAN) github repostiory.
-- For StyleGAN2 (small), you can download FFHQ pre-trained weights are provided by nvidia official stylegan2 repository. You may use following command to download the weights.
-    ```
-    wget https://nvlabs-fi-cdn.nvidia.com/stylegan2-ada-pytorch/pretrained/transfer-learning-source-nets/ffhq-res256-mirror-paper256-noaug.pkl
-    ```
+#### 1. Pre-trained compresesed weights for inference download: [here](https://drive.google.com/drive/u/1/home).
 
-- When using a StyleGAN2 (base) model trained with an unofficial implementation, you need to convert the weights to be compatible with the official implementation. You can use "weight_converter.ipynb".
+#### 2-1. Pre-trained dense weights for pruning & fine-tuning:
+- FFHQ-256 / LSUN Church-256 (base) : [DCP-GAN](https://github.com/jiwoogit/DCP-GAN?tab=readme-ov-file#pre-trained-weights) github repostiory.
+- FFHQ-256 (small) : [Nvidia-official FFHQ-256 weights](https://nvlabs-fi-cdn.nvidia.com/stylegan2-ada-pytorch/pretrained/transfer-learning-source-nets/ffhq-res256-mirror-paper256-noaug.pkl).
+- FFHQ-1024 : [Nvidia-official FFHQ-1024 weights](https://nvlabs-fi-cdn.nvidia.com/stylegan2-ada-pytorch/pretrained/transfer-learning-source-nets/ffhq-res1024-mirror-stylegan2-noaug.pkl).
+- For remaining datsets, you can download the weights from [here](https://drive.google.com/drive/u/1/home).
+
+#### 2-2. Weight convert for unofficial implementation.
+- FFHQ-256 / LSUN Church-256 (base) models provided by [DCP-GAN](https://github.com/jiwoogit/DCP-GAN?tab=readme-ov-file#pre-trained-weights) are trained with an unofficial implementation. You need to convert the weights to be compatible with the official implementation. You can use "weight_converter.ipynb".
 
 ### Prune Models
 
