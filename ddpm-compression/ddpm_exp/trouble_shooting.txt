@@ -1,0 +1,17 @@
+When you resume,
+
+in runners.diffusion.py
+
+in def train()
+
+
+if self.args.resume_training:
+            states = torch.load(os.path.join(self.args.log_path, "ckpt.pth"), map_location='cpu')
+
+
+
+
+
+map_location='cpu'
+
+will save your CUDA memory.

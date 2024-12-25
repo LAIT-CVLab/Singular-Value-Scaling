@@ -1,0 +1,13 @@
+__pycache__
+.cache/
+.github
+/out
+/output
+/data
+/**/*.pt
+/**/*.pth
+/**/*.pkl
+/**/*.ckpt
+/checkpoints/*
+/weights/*
+/training-runs

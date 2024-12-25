@@ -1,0 +1,13 @@
+python -m torch.distributed.launch --nproc_per_node=4 --master_port 22222 --use_env finetune.py \
+--config celeba.yml \
+--exp run/sample/ddim_celeba_official \
+--doc sample_50k \
+--sample \
+--fid \
+--eta 0 \
+--timesteps 100 \
+--skip_type quad  \
+--use_pretrained \
+--ni \
+--pruning_ratio 0.0 \
+--use_ema \

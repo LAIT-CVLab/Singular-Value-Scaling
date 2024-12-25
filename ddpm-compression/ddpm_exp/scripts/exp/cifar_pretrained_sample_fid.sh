@@ -1,0 +1,13 @@
+python finetune.py \
+--config cifar10.yml \
+--exp run/sample/ddim_cifar10_official \
+--doc sample_50k \
+--sample \
+--fid \
+--eta 0 \
+--timesteps 100 \
+--skip_type quad  \
+--use_pretrained \
+--ni \
+--pruning_ratio 0.0 \
+--use_ema \
