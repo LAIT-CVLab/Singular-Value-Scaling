@@ -75,7 +75,7 @@ python train_stylekd_scaling.py --outdir /path/to/save/training/results \
                 --dataset ffhq \ [ffhq | church]
 ```
 
-- We provide example scripts in [scripts](scripts/) directory.
+- We provide example scripts in [scripts](scripts/templates/ours/) directory.
 
 ## Evaluations
 
