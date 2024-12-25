@@ -31,7 +31,7 @@ pip install click requests tqdm opencv-python-headless matplotlib regex ftfy psu
 - For StyleGAN2 (small) weights on LSUN Church-256 / LSUN Cat-256 datasets, you can download the weights from [here](https://drive.google.com/drive/u/1/home).
 
 #### 2-2. Weight convert for unofficial implementation.
-- FFHQ-256 / LSUN Church-256 (base) models provided by [DCP-GAN](https://github.com/jiwoogit/DCP-GAN?tab=readme-ov-file#pre-trained-weights) are trained with an unofficial implementation. You need to convert the weights to be compatible with the official implementation. You can use "weight_converter.ipynb".
+- FFHQ-256 (base) models provided by [DCP-GAN](https://github.com/jiwoogit/DCP-GAN?tab=readme-ov-file#pre-trained-weights) are trained with an unofficial implementation. You need to convert the weights to be compatible with the official implementation. You can use "weight_converter.ipynb".
 
 ### Prune Models
 
