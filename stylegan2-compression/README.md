@@ -24,6 +24,8 @@ pip install click requests tqdm opencv-python-headless matplotlib regex ftfy psu
 
 #### 2-1. Pre-trained dense weights for pruning & fine-tuning:
 - FFHQ-256 / LSUN Church-256 (base) : [DCP-GAN](https://github.com/jiwoogit/DCP-GAN?tab=readme-ov-file#pre-trained-weights) github repostiory.
+- LSUN Church (base) : [Nvidia-official LSUN Church-256 weights](https://nvlabs-fi-cdn.nvidia.com/stylegan2/networks/stylegan2-church-config-f.pkl).
+- LSUN Cat (base) : [Nvidia-official LSUN Cat-256 weights](https://nvlabs-fi-cdn.nvidia.com/stylegan2/networks/stylegan2-cat-config-f.pkl).
 - FFHQ-256 (small) : [Nvidia-official FFHQ-256 weights](https://nvlabs-fi-cdn.nvidia.com/stylegan2-ada-pytorch/pretrained/transfer-learning-source-nets/ffhq-res256-mirror-paper256-noaug.pkl).
 - FFHQ-1024 : [Nvidia-official FFHQ-1024 weights](https://nvlabs-fi-cdn.nvidia.com/stylegan2-ada-pytorch/pretrained/transfer-learning-source-nets/ffhq-res1024-mirror-stylegan2-noaug.pkl).
 - For remaining datsets, you can download the weights from [here](https://drive.google.com/drive/u/1/home).
