@@ -23,12 +23,12 @@ pip install click requests tqdm opencv-python-headless matplotlib regex ftfy psu
 #### 1. Pre-trained compresesed weights for inference download: [here](https://drive.google.com/drive/u/1/home).
 
 #### 2-1. Pre-trained dense weights for pruning & fine-tuning:
-- FFHQ-256 / LSUN Church-256 (base) : [DCP-GAN](https://github.com/jiwoogit/DCP-GAN?tab=readme-ov-file#pre-trained-weights) github repostiory.
+- FFHQ-256 (base) : [DCP-GAN](https://github.com/jiwoogit/DCP-GAN?tab=readme-ov-file#pre-trained-weights) github repostiory.
 - LSUN Church (base) : [Nvidia-official LSUN Church-256 weights](https://nvlabs-fi-cdn.nvidia.com/stylegan2/networks/stylegan2-church-config-f.pkl).
 - LSUN Cat (base) : [Nvidia-official LSUN Cat-256 weights](https://nvlabs-fi-cdn.nvidia.com/stylegan2/networks/stylegan2-cat-config-f.pkl).
 - FFHQ-256 (small) : [Nvidia-official FFHQ-256 weights](https://nvlabs-fi-cdn.nvidia.com/stylegan2-ada-pytorch/pretrained/transfer-learning-source-nets/ffhq-res256-mirror-paper256-noaug.pkl).
 - FFHQ-1024 : [Nvidia-official FFHQ-1024 weights](https://nvlabs-fi-cdn.nvidia.com/stylegan2-ada-pytorch/pretrained/transfer-learning-source-nets/ffhq-res1024-mirror-stylegan2-noaug.pkl).
-- For remaining datsets, you can download the weights from [here](https://drive.google.com/drive/u/1/home).
+- For StyleGAN2 (small) weights on LSUN Church-256 / LSUN Cat-256 datasets, you can download the weights from [here](https://drive.google.com/drive/u/1/home).
 
 #### 2-2. Weight convert for unofficial implementation.
 - FFHQ-256 / LSUN Church-256 (base) models provided by [DCP-GAN](https://github.com/jiwoogit/DCP-GAN?tab=readme-ov-file#pre-trained-weights) are trained with an unofficial implementation. You need to convert the weights to be compatible with the official implementation. You can use "weight_converter.ipynb".
