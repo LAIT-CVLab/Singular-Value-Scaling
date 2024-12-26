@@ -2,7 +2,7 @@
 
 ### [Arxiv](https://arxiv.org/abs/2412.17387) / [Project Page](https://hjinnkim.github.io/SVS_site/)
 
-Authors: Hyeonjin Kim and [Jaejun Yoo](https://scholar.google.co.kr/citations?hl=en&user=7NBlQw4AAAAJ)
+Authors: Hyeonjin Kim, [Jaejun Yoo](https://scholar.google.co.kr/citations?hl=en&user=7NBlQw4AAAAJ)
 
 ---
 ![imgs](assets/main_framework.png)
