@@ -23,7 +23,7 @@ pip install click requests tqdm opencv-python-headless matplotlib regex ftfy psu
 
 ### Download Dense StyleGAN2 Weights
 
-#### 1. Pre-trained compresesed weights for inference download: [here](https://drive.google.com/drive/u/1/home).
+#### 1. Pre-trained compresesed weights for inference download: [here](https://drive.google.com/drive/folders/1uNKHBu4t77l2jHtCCxkRfQmJ2QMbvDDh?usp=drive_link).
 
 #### 2. Pre-trained dense weights for pruning & fine-tuning:
 - FFHQ-256 : [DCP-GAN](https://github.com/jiwoogit/DCP-GAN?tab=readme-ov-file#pre-trained-weights) github repostiory. (`StyleGAN3_FFHQ256` dir)
