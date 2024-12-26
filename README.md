@@ -1,11 +1,13 @@
 # [AAAI 2025] Singular Value Scaling: Efficient Generative Model Compression via Pruned Weights Refinement
 
-Singular Value Scaling: Efficient Generative Model Compression via Pruned Weights Refinement - Official Implementation
+### [Arxiv](https://arxiv.org/abs/2412.17387) / [Project Page](https://hjinnkim.github.io/SVS_site/)
 
-Authors: Hyeonjin Kim, [Jaejun Yoo](https://scholar.google.co.kr/citations?hl=en&user=7NBlQw4AAAAJ)
+Authors: [Hyeonjin Kim](https://hjinnkim.github.io/), [Jaejun Yoo](https://scholar.google.co.kr/citations?hl=en&user=7NBlQw4AAAAJ)
 
+---
+![imgs](assets/main_framework.png)
 
-
+---
 
 ## Codes for StyleGAN2, StyleGAN3, and DDPM compression
 Please refer following codes for each model.
