@@ -1,8 +1,11 @@
 # DDPM Compression
 
-<div align="center">
-<img src="assets/framework.png" width="80%"></img>
+### Main Quantitative Results in the Paper
+
+<div style="text-align: center;">
+  <img src="assets/main.png" width="80%" />
 </div>
+
 
 ## Usage
 

@@ -2,6 +2,12 @@
 
 - This repository is built upon [DCP-GAN](https://github.com/jiwoogit/DCP-GAN/tree/stylegan3)
 
+### Main Quantitative Results in the Paper
+
+<div style="text-align: center;">
+  <img src="assets/main.png" width="80%" />
+</div>
+
 ## Usage
 
 ### Installation

@@ -1,7 +1,21 @@
 # StyleGAN2 Compression
 
-## Usage
+### Main Quantitative Results in the Paper
 
+<div style="text-align: center;">
+  <img src="assets/main.png" width="80%" />
+</div>
+
+### Additional Quantitative Results
+
+<div style="text-align: center;">
+  <img src="assets/additional2.png" width="80%" />
+</div>
+<div style="text-align: center;">
+  <img src="assets/additional.png" width="80%" />
+</div>
+
+## Usage
 ### Installation
 
 - We used following conda environments for all experiments.
