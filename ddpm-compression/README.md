@@ -43,12 +43,25 @@ bash scripts/exp/cifar_our_finetune_scaling_pr0.3_thr0.05.sh # finetune pruned m
 
 
 ## Evalutaions
+
+### (Only for CIFAR10 case) 
+- Download and extract CIFAR-10 images to data/cifar10_images for training and evaluation.
+```
+python tools/extract_cifar10.py --output data
+```
+
 ### Sampling
+
+- You need to generate samples with your compressed model first.
+- Below is the exmple sampling script. 
+
 ```
 cd ddpm_exp
 
 bash scripts/exp/cifar_our_sample_scaling_fid_pr0.3_thr0.05.sh /path/to/compressed_weights
 ```
+- We provide example scripts in [ddpm_exp/scripts/exp/](ddpm_exp/scripts/exp/) directory.
+
 
 ### FID
 ```
@@ -58,17 +71,17 @@ bash scripts/exp/cifar_our_sample_scaling_fid_pr0.3_thr0.05.sh /path/to/compress
 python fid_score.py --save-stats data/cifar10_images run/fid_stats_cifar10.npz --device cuda:0 --batch-size 256
 
 ## CelebA-HQ
-python fid_score.py --save-stats --dataset_name celeba --res 64 ddpm_exp/data/celeba/Img/img_align_celeba run/fid_stats_celeba.npz --device cuda:0 --batch-size 64 
+python fid_score.py --save-stats --dataset_name celeba --res 64 path/to/celeba_image_dataset run/fid_stats_celeba.npz --device cuda:0 --batch-size 64 
 ```
 
 ```
 # Compute FID score
 
 ## CIFAR10
-python fid_score.py /path/to/samples run/fid_stats_cifar10.npz --device cuda:0 --batch-size 256
+python fid_score.py /path/to/generated_samples run/fid_stats_cifar10.npz --device cuda:0 --batch-size 256
 
 ## CelebA-HQ
-python fid_score.py /path/to/samples run/fid_stats_celeba.npz --device cuda:0 --batch-size 256
+python fid_score.py /path/to/generated_samples run/fid_stats_celeba.npz --device cuda:0 --batch-size 256
 ```
 
 ### Precision & Recall & Density & Coverage
@@ -76,20 +89,20 @@ python fid_score.py /path/to/samples run/fid_stats_celeba.npz --device cuda:0 --
 # Dataset PRDC stats
 
 ## CIFAR10
-python prdc_score.py --save-stats /path/to/images run/prdc_stats_cifar10.npz --device cuda:0 --batch-size 256
+python prdc_score.py --save-stats data/cifar10_images run/prdc_stats_cifar10.npz --device cuda:0 --batch-size 256
 
 ## CelebA-HQ
-python prdc_score.py --save-stats --dataset_name celeba --res 64 /path/to/images run/prdc_stats_celeba.npz --device cuda:0 --batch-size 64 --num_samples 50000
+python prdc_score.py --save-stats --dataset_name celeba --res 64 path/to/celeba_image_dataset run/prdc_stats_celeba.npz --device cuda:0 --batch-size 64 --num_samples 50000
 ```
 
 ```
-# Samples PRDC stats
+# Generated samples PRDC stats
 
 ## CIFAR10
-python prdc_score.py --save-stats /path/to/samples /path/to/save/samples/stats.npz --device cuda:0 --batch-size 256
+python prdc_score.py --save-stats /path/to/generated_samples run/prdc_stats_cifar10_samples.npz --device cuda:0 --batch-size 256
 
 ## CelebA-HQ
-python prdc_score.py --save-stats /path/to/samples /path/to/save/samples/stats.npz --device cuda:0 --batch-size 64  
+python prdc_score.py --save-stats /path/to/generated_samples run/prdc_stats_celeba_samples.npz --device cuda:0 --batch-size 64  
 
 ```
 
@@ -97,10 +110,10 @@ python prdc_score.py --save-stats /path/to/samples /path/to/save/samples/stats.n
 # Compute PRDC score
 
 ## CIFAR10
-python prdc_score.py /path/to/save/samples/stats.npz run/prdc_stats_cifar10.npz --device cuda:0 --batch-size 256
+python prdc_score.py run/prdc_stats_cifar10_samples.npz run/prdc_stats_cifar10.npz --device cuda:0 --batch-size 256
 
 ## CelebA-HQ
-python prdc_score.py /path/to/save/samples/stats.npz run/prdc_stats_celeba.npz --device cuda:0 --batch-size 64
+python prdc_score.py run/prdc_stats_celeba_samples.npz run/prdc_stats_celeba.npz --device cuda:0 --batch-size 64
 ```
 
 ## Citations
