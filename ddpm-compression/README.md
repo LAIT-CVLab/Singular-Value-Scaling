@@ -110,10 +110,10 @@ python prdc_score.py --save-stats /path/to/generated_samples run/prdc_stats_cele
 # Compute PRDC score
 
 ## CIFAR10
-python prdc_score.py run/prdc_stats_cifar10_samples.npz run/prdc_stats_cifar10.npz --device cuda:0 --batch-size 256
+python prdc_score.py run/prdc_stats_cifar10.npz run/prdc_stats_cifar10_samples.npz --device cuda:0 --batch-size 256
 
 ## CelebA-HQ
-python prdc_score.py run/prdc_stats_celeba_samples.npz run/prdc_stats_celeba.npz --device cuda:0 --batch-size 64
+python prdc_score.py run/prdc_stats_celeba.npz run/prdc_stats_celeba_samples.npz --device cuda:0 --batch-size 64
 ```
 
 ## Citations
